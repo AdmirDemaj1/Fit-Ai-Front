@@ -1,0 +1,60 @@
+/* DietPlan.css */
+.diet-plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+  }
+  
+  .day-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .day-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .day-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .day-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .day-card li {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .day-card li:first-child {
+    border-top: none;
+  }
+  
+  .day-card li strong {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .diet-plan-container {
+      padding: 10px;
+    }
+  
+    .day-card {
+      width: 100%;
+    }
+  }
+  
