@@ -37,25 +37,25 @@ h1 {
   margin-top: 2rem;
 }
 
-form {
+/* form {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
   background: white;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
-input {
+/* input {
   display: block;
   width: calc(100% - 2rem);
   margin: 0.5rem 1rem;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
+} */
 
-button {
+/* button {
   display: block;
   width: calc(100% - 2rem);
   margin: 1rem;
@@ -65,13 +65,13 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
+} */
+/* 
 button:hover {
   background-color: #555;
-}
+} */
 
-h3 {
+/* h3 {
   font-size: 1.5rem;
   text-align: center;
 }
@@ -80,4 +80,4 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 1rem;
-}
+} */

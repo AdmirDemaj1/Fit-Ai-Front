@@ -32,4 +32,10 @@ const getDietPlan = (token) => axios.get(`${API_URL}/diet`, {
   },
 });
 
-export { register, login, generateDietPlan, getDietPlan };
+const fetchDailyDietPlan = (dietData, token) => axios.post(`${API_URL}/diet/info`, dietData, {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+})
+
+export { register, login, generateDietPlan, getDietPlan, fetchDailyDietPlan };

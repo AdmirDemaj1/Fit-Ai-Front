@@ -1,0 +1,48 @@
+/* File: src/components/TestimonialsSection.css */
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #f0f8ff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.testimonial-card h4 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #16a085;
+}

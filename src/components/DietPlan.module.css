@@ -1,0 +1,135 @@
+/* File: src/DietPlan.module.css */
+
+/* General container for the diet plan calendar */
+.dietPlanCalendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #8bc6ec, #9599e2); /* Subtle background */
+}
+
+/* Day headers for the calendar */
+.dayHeader {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty day cells to fill the calendar grid */
+.emptyDay {
+  background: transparent;
+}
+
+/* Individual day card styled like a calendar day */
+.dayCard {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  border: 1px solid #e0e0e0;
+}
+
+.dayCard.completedDay {
+  background: #d4edda; /* Light green background for completed days */
+  border: 1px solid #28a745; /* Green border for completed days */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  color: #155724;
+}
+
+/* Day number displayed prominently */
+.dayNumber {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dayCard.completedDay .dayNumber {
+  color: #155724;
+}
+
+/* Meals list styling */
+.mealsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Individual meal item */
+.mealItem {
+  background: #f7f7f7;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.mealItem strong {
+  color: #2c3e50;
+}
+
+.mealItem:hover {
+  background-color: #ebebeb;
+}
+
+/* Completed note or summary for the last day */
+.specialNote {
+  font-size: 0.9rem;
+  color: #777;
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding: 1rem;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Footer with the completion button */
+.dayFooter {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Completion button styling */
+.completeButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.completeButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.completeButton.completed {
+  background-color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.completeButton.completed:hover {
+  background-color: #218838;
+}

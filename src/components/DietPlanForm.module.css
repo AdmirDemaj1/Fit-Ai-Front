@@ -1,0 +1,160 @@
+/* File: src/components/DietPlanForm.module.css */
+.dietPlanFormPage {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8BC6EC, #9599E2); /* Light blue to purple gradient */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .dietPlanFormContainer {/* File: src/DietPlan.module.css */
+
+    /* General container for the diet plan calendar */
+    .dietPlanCalendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f4f4f4, #e2e2e2); /* Light gradient background */
+    }
+    
+    /* Day headers for the calendar */
+    .dayHeader {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 0.75rem;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Empty day cells to fill the calendar grid */
+    .emptyDay {
+      background: transparent;
+    }
+    
+    /* Individual day card styled like a calendar day */
+    .dayCard {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 120px;
+    }
+    
+    .dayCard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Day number displayed prominently */
+    .dayNumber {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4CAF50;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    
+    /* Meals list styling */
+    .mealsList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+      flex-grow: 1;
+    }
+    
+    .mealItem {
+      background: #f7f7f7;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+    
+    .mealItem strong {
+      color: #ff7f50;
+    }
+    
+    .mealItem:hover {
+      background-color: #e0ffe0;
+    }
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dietPlanForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputField {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .inputField:focus {
+    border-color: #8BC6EC;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .formButton {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formButton:hover {
+    background-color: #43A047;
+    transform: translateY(-3px);
+  }
+  
+  .formButton:active {
+    background-color: #388E3C;
+    transform: translateY(1px);
+  }
+  
+  .spinnerContainer,
+  .dietPlanContainer {
+    margin-top: 2rem;
+  }
+  

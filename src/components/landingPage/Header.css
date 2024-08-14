@@ -1,0 +1,32 @@
+/* File: src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #282c34;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff7f50;
+  }
+  

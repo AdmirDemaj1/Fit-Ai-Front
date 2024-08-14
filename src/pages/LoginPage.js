@@ -8,7 +8,6 @@ const LoginPage = () => {
 
   return (
     <div>
-      <h1>Login</h1>
       <Login setToken={setToken} navigate={navigate} />
       {token && <p>Logged in successfully. Token: {token}</p>}
     </div>
